@@ -12,23 +12,25 @@
 
 .content-body{
 	z-index:999999999;
-	background-color:rgba(0,0,0, .5);
+	background-color:rgba(0,0,0, .3);
 	top:0;left:0;
 	width:100%;
+	position: relative;
 	height:100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
-hr{
-	background-color:white;
-	border-color: white;
-	}
-
 .left-bar{
-	height:100%;
-	width:25%;
+	position: relative;
+	background-color: rgb(146, 232, 245);
 	padding:1em;
 	overflow: auto;
-	background-color:rgba(255,255,255, .05);
+}
+
+.right-bar{
+	position: relative;
+	background-color: rgb(92, 91, 91, .2);
 }
 
 .picture-blog{
@@ -42,6 +44,11 @@ img {
 	width:200px;
 	height:200px
 }
+
+hr{
+	background-color:white;
+	border-color: white;
+	}
 
 .header
 {
@@ -60,6 +67,10 @@ img {
 	padding:1em;
 	display:block;
 	font-size:20px;
+}
+
+p{
+	padding:1em;
 }
 
 td{
@@ -127,10 +138,9 @@ label{
 
  @media screen and (max-width: 699px)
  {
-	.left-bar{
-		width:55%;
-	}
-		
+	.content-body{
+		grid-template-columns: 2fr 3fr;
+	}	
  }
 
  /* -- fin du responsive -- */
