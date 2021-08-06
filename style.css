@@ -143,11 +143,4 @@ label{
 	}	
  }
 
- @media screen and (max-width: 1195px)
- {
-	.content-body{
-		grid-template-columns: 2fr 3fr;
-	}	
- }
-
  /* -- fin du responsive -- */
