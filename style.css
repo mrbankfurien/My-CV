@@ -31,7 +31,39 @@
 .right-bar{
 	position: relative;
 	background-color: rgb(92, 91, 91, .2);
+	padding:2em;
+	overflow: auto;
 }
+
+.right-bar h3{
+	color:white;
+	font-size:30px;
+	text-decoration: underline;
+}
+
+.right-bar h4{
+	text-decoration: underline;
+	color:white;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+
+.right-bar p{
+	font-size: 20px;
+}
+
+.right-bar em{
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.right-bar span{
+	color:green ;
+	font-weight: bolder;
+	font-size:20px;
+}
+
 
 .picture-blog{
 	width:100%;
@@ -137,6 +169,13 @@ label{
  }	
 
  @media screen and (max-width: 699px)
+ {
+	.content-body{
+		grid-template-columns: 2fr 3fr;
+	}	
+ }
+
+ @media screen and (max-width: 1195px)
  {
 	.content-body{
 		grid-template-columns: 2fr 3fr;
