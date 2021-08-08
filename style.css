@@ -8,6 +8,7 @@
 	width:100vw;
 	height:100vh;
 	background-image:url("img/background.jpg");
+	background-size: cover;
 }
 
 .content-body{
@@ -32,18 +33,19 @@
 	position: relative;
 	background-color: rgb(92, 91, 91, .2);
 	padding:2em;
+	color: white;
 	overflow: auto;
 }
 
 .right-bar h3{
-	color:white;
+	color:rgb(98, 176, 240) ;
 	font-size:30px;
 	text-decoration: underline;
 }
 
 .right-bar h4{
 	text-decoration: underline;
-	color:white;
+	color:rgb(50, 135, 205);
 	font-weight: bolder;
 	font-size: 25px;
 }
@@ -59,7 +61,7 @@
 }
 
 .right-bar span{
-	color:green ;
+	color:red ;
 	font-weight: bolder;
 	font-size:20px;
 }
@@ -189,6 +191,41 @@ label{
 	.content-body{
 		grid-template-columns: 2fr 3fr;
 	}	
+ }
+
+ @media screen and (max-width: 560px)
+ {
+	.content-body{
+		width: 100%;
+		height: 100%;
+		max-width: 1000px;
+		max-height: 1000px;
+		text-align: center;
+		overflow: auto;
+		grid-template-columns:1fr;
+	}	
+
+	td{
+		display:inline;
+		padding:.2em;
+	}
+
+	.left-bar{
+		position: relative;
+		background-color: rgb(146, 232, 245);
+		padding:1em;
+		height: 580px;
+		max-height:800px;
+	}
+	
+	.right-bar{
+		position: relative;
+		background-color: rgb(92, 91, 91, .2);
+		padding:2em;
+		height: 1200px;
+		max-height:2000px;
+	}
+	
  }
 
  /* -- fin du responsive -- */
